@@ -1,0 +1,70 @@
+lockfile_version: '1'
+generated_at: '2026-08-17T06:58:29.078324+00:00'
+dependencies: []
+deployments:
+- kind: project-relative
+  target: agents
+  value: .agents/skills/devcontainer-readme
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: agents
+  value: .agents/skills/devcontainer-readme/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:7a4039575a80a2b66226f67b7fe7a2d65f75e8eb57c5673e2974ecdfc715bb39
+- kind: project-relative
+  target: agents
+  value: .agents/skills/devcontainer-readme/assets/readme-template.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:99cbcf71096f96fd61d59635da90f37e69e266d830109bbad4ae9d5c586e0ba5
+- kind: project-relative
+  target: claude
+  value: .claude/skills/devcontainer-readme
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/devcontainer-readme/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:7a4039575a80a2b66226f67b7fe7a2d65f75e8eb57c5673e2974ecdfc715bb39
+- kind: project-relative
+  target: claude
+  value: .claude/skills/devcontainer-readme/assets/readme-template.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:99cbcf71096f96fd61d59635da90f37e69e266d830109bbad4ae9d5c586e0ba5
+local_deployed_files:
+- .agents/skills/devcontainer-readme
+- .agents/skills/devcontainer-readme/SKILL.md
+- .agents/skills/devcontainer-readme/assets/readme-template.md
+- .claude/skills/devcontainer-readme
+- .claude/skills/devcontainer-readme/SKILL.md
+- .claude/skills/devcontainer-readme/assets/readme-template.md
+local_deployed_file_hashes:
+  .agents/skills/devcontainer-readme/SKILL.md: sha256:7a4039575a80a2b66226f67b7fe7a2d65f75e8eb57c5673e2974ecdfc715bb39
+  .agents/skills/devcontainer-readme/assets/readme-template.md: sha256:99cbcf71096f96fd61d59635da90f37e69e266d830109bbad4ae9d5c586e0ba5
+  .claude/skills/devcontainer-readme/SKILL.md: sha256:7a4039575a80a2b66226f67b7fe7a2d65f75e8eb57c5673e2974ecdfc715bb39
+  .claude/skills/devcontainer-readme/assets/readme-template.md: sha256:99cbcf71096f96fd61d59635da90f37e69e266d830109bbad4ae9d5c586e0ba5

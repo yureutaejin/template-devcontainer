@@ -1,0 +1,53 @@
+{
+  "name": "template-devcontainer",
+  "remoteUser": "vscode",
+  "containerUser": "vscode",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "mounts": [
+    {
+      "source": "${localWorkspaceFolder}/.codex",
+      "target": "/home/vscode/.codex",
+      "type": "bind"
+    }
+  ],
+  "runArgs": [
+    "--name",
+    "template-devcontainer",
+    "--net=host",
+    "--add-host=host.docker.internal:host-gateway"
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "moby": false
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bierner.markdown-mermaid",
+        "charliermarsh.ruff",
+        "eamodio.gitlens",
+        "golang.Go",
+        "GitHub.vscode-pull-request-github",
+        "mhutchie.git-graph",
+        "openai.chatgpt",
+        "rust-lang.rust-analyzer",
+        "tamasfe.even-better-toml",
+        "vadimcn.vscode-lldb",
+        "yzhang.markdown-all-in-one"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "rust-analyzer.check.command": "clippy"
+      }
+    }
+  },
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind,consistency=cached",
+  "postCreateCommand": {
+    "setup-user.sh": "bash ${containerWorkspaceFolder}/.devcontainer/setup.user.sh"
+  }
+}
