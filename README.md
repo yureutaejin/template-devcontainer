@@ -51,3 +51,13 @@ The container runs as the `vscode` user. It bind-mounts the local [`.codex`](.co
 | [tamasfe.even-better-toml](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) | TOML language support. |
 | [vadimcn.vscode-lldb](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) | Native debugging with LLDB. |
 | [yzhang.markdown-all-in-one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) | Markdown editing, shortcuts, and formatting. |
+
+## Bootstrap Templates
+
+| Template | Commands | Validation |
+| --- | --- | --- |
+| [Go](go-bootstrap) | `go run ./cmd/app` | `make check` (`gofmt`, `go vet`, race-enabled tests, build) |
+| [Python](python-bootstrap) | `uv run python-bootstrap` | `make check` (Ruff, Pyright, pytest) |
+| [Rust](rust-bootstrap) | `cargo run` | `make check` (`fmt`, Clippy, tests, build) |
+
+Each template is independently usable. The Python lockfile is intentionally committed for reproducible environments.
